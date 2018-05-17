@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/list_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_section_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/icons_margin"
+            android:src="@drawable/ic_folder_open_black_24dp" />
+
+        <TextView
+            android:id="@+id/text_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_section_icon"
+            android:textAppearance="@style/newsSection"
+            tools:text="Section" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/icons_margin"
+            android:layout_toLeftOf="@id/image_time_icon"
+            android:textAppearance="@style/newsDate"
+            tools:text="2018" />
+
+
+        <ImageView
+            android:id="@+id/image_time_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_access_time_black_24dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:textColor="@color/newsTitle"
+        android:textSize="@dimen/title_size"
+        tools:text="Title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/author_margin_top"        >
+
+        <ImageView
+            android:id="@+id/image_author_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/icons_margin"
+            android:src="@drawable/ic_perm_identity_black_24dp" />
+
+        <TextView
+            android:id="@+id/text_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_author_icon"
+            android:textAppearance="@style/newsAuthor"
+            tools:text="author" />
+    </RelativeLayout>
+</LinearLayout>
